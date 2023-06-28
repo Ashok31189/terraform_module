@@ -13,7 +13,7 @@ resource "aws_instance" "webserver" {
   connection {
     type        = "ssh"
     user        = "ubuntu"
-    private_key = file("C:/Users/skash/Downloads/pem_mumbai.pem")
+    private_key = file(var.private_key_path)
     host        = self.public_ip
   }
 
