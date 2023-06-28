@@ -27,6 +27,9 @@ variable "tags" {
   type        = string
   description = "This is the tag name of the instance"
 }
-
+variable "private_key_path" {
+  type        = string
+  description = "This is the private key path"
+}
 
 
